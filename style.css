@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Calton Elegance Script";
-  src: url("./fonts/Calton\ Elegance\ Script.ttf?9h1pxj") format("truetype");
+  src: url("./fonts/Calton\ Elegance\ Script.ttf") format("ttf");
 }
 
 * {
