@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="lcm.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,7 +22,7 @@
         <img src="./assets/Kothik.png" alt="" />
       </div>
       <div class="cursor"></div>
-      <div id="page-1">
+      <div id="page-1" class="section">
         <div class="landing-page">
           <div class="landing-overlay"></div>
           <div class="txt">
@@ -31,10 +35,15 @@
             muted
             loop
             preload="auto"
+            loading="eager"
           ></video>
           <div class="web-menu">
             <div data-scroll-container class="text-scroll">
-              <span data-scroll-section class="sec hover-underline-animation">
+              <div
+                data-scroll-section
+                class="sec hover-underline-animation"
+                id="1"
+              >
                 <h4>I</h4>
                 <h1>SWAGATAM</h1>
                 <div class="images I">
@@ -45,8 +54,12 @@
                     <img src="./assets/food-img2.webp" alt="" />
                   </div>
                 </div>
-              </span>
-              <span data-scroll-section class="sec hover-underline-animation">
+              </div>
+              <div
+                data-scroll-section
+                class="sec hover-underline-animation"
+                id="2"
+              >
                 <h4>II</h4>
                 <h1>OUR EXQUISITE PLATTER</h1>
                 <div class="images II">
@@ -60,8 +73,12 @@
                     <img src="./assets/cookies.webp" alt="" />
                   </div>
                 </div>
-              </span>
-              <span data-scroll-section class="sec hover-underline-animation">
+              </div>
+              <div
+                data-scroll-section
+                class="sec hover-underline-animation"
+                id="3"
+              >
                 <h4>III</h4>
                 <h1>LUXURIOUS ROOMS</h1>
                 <div class="images III">
@@ -75,8 +92,12 @@
                     <img src="./assets/business.webp" alt="" />
                   </div>
                 </div>
-              </span>
-              <span data-scroll-section class="sec hover-underline-animation">
+              </div>
+              <div
+                data-scroll-section
+                class="sec hover-underline-animation"
+                id="4"
+              >
                 <h4>IV</h4>
                 <h1>EXPERIMENTATIONS</h1>
                 <div class="images IV">
@@ -87,8 +108,12 @@
                     <img src="./assets/exp1.webp" alt="" />
                   </div>
                 </div>
-              </span>
-              <span data-scroll-section class="sec hover-underline-animation">
+              </div>
+              <div
+                data-scroll-section
+                class="sec hover-underline-animation"
+                id="5"
+              >
                 <h4>V</h4>
                 <h1>CONTACT</h1>
                 <div class="images V">
@@ -99,7 +124,7 @@
                     <img src="./assets/cont2.webp" alt="" />
                   </div>
                 </div>
-              </span>
+              </div>
             </div>
           </div>
           <div id="nav">
@@ -149,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="page-2">
+      <div class="page-2 section" id="page-2">
         <div class="food-panel">
           <video
             src="./assets/food.webm"
@@ -157,6 +182,7 @@
             loop
             muted
             preload="auto"
+            loading="eager"
           ></video>
           <div class="page-overlay">
             <div class="table-catg">
@@ -190,13 +216,23 @@
           <h1>Where every flavour tells a story</h1>
         </div>
       </div>
-      <div class="page-3">
+      <div class="page-3 section" id="page-3">
         <div class="hotel-view">
           <div class="arrows">
-            <div class="arrow-1" onclick="leftBtnClick()">
+            <div
+              class="arrow-1 arrow"
+              onclick="leftBtnClick()"
+              onmousemove="mousemove()"
+              onmouseleave="mouseleave()"
+            >
               <img src="./assets/left-arrow.png" alt="" />
             </div>
-            <div class="arrow-2" onclick="rightBtnClick()">
+            <div
+              class="arrow-2 arrow"
+              onclick="rightBtnClick()"
+              onmousemove="mousemove()"
+              onmouseleave="mouseleave()"
+            >
               <img src="./assets/finalarrowright.png" alt="" />
             </div>
           </div>
@@ -248,7 +284,7 @@
           </div>
         </div>
       </div>
-      <div class="page-4">
+      <div class="page-4 section" id="page-4">
         <div class="order-food">
           <div class="nav">
             <h3>942 restaurants</h3>
@@ -274,7 +310,7 @@
           </div>
         </div>
       </div>
-      <div class="page-5">
+      <div class="page-5 section" id="page-5">
         <footer class="section-p1">
           <div class="col">
             <h4>Contact</h4>
@@ -325,6 +361,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="locomotive-scroll.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>
