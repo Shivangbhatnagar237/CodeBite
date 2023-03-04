@@ -1073,6 +1073,7 @@ html::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .details .head-blocks {
