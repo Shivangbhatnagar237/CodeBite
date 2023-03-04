@@ -7,18 +7,22 @@
   font-family: Calton Elegance Script;
   src: url(./fonts/Calton-Elegance-Script.ttf);
 }
-@font-face {
-  font-family: Calton Elegance Script;
-  src: url(./fonts/Calton-Elegance-Script.woff);
-}
-@font-face {
-  font-family: Calton Elegance Script;
-  src: url(./fonts/Calton-Elegance-Script.woff2);
-}
+
 @font-face {
   font-family: Calton Elegance Script;
   src: url(./fonts/Calton\ Elegance\ Script.otf);
 }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./fonts/Gilroy-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./fonts/Gilroy-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
