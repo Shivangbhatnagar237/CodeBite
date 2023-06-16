@@ -90,10 +90,10 @@ web_menu.addEventListener("mousemove", (dets) => {
     let stripWidth = scroller.getBoundingClientRect().width;
     let right = 1600;
     margin = (left * stripWidth) / right;
-    // gsap.to(scroller, {
-    //   margin: `0 0 0 -${margin}px`
-    // })
-    scroller.style.marginLeft = `-${margin}px`;
+    gsap.to(scroller, {
+      margin: `0 0 0 -${margin}px`
+    })
+    // scroller.style.marginLeft = `-${margin}px`;
   }
 });
 
@@ -129,8 +129,12 @@ const page1 = () => {
 };
 
 const main = document.querySelector("#main");
-const page2Top = document.querySelector(".page-2").getBoundingClientRect().top;
-const page3Top = document.querySelector(".page-3").getBoundingClientRect().top;
+const page2Top = Math.floor(
+  document.querySelector(".page-2").getBoundingClientRect().top
+);
+const page3Top = Math.floor(
+  document.querySelector(".page-3").getBoundingClientRect().top
+);
 
 main.addEventListener("scroll", (dets) => {
   let elem = dets.target;
